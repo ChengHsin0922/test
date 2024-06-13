@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星際效應</title>
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="showtime">
+        <p>好戲上場</p>
+        <a href="./購票系統.html" target="_blank"><img src="./img/ticket/ticket_1.png" id="ticket"></a>
+    </div>
+
+    <header>
+        <div class="toggle_btn">
+            <button class="menu">&#9776;</button>
+        </div>
+        <h1 class="navbar">INTERSTELLAR</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar"><a href="#synopsis">劇情介紹</a></li>
+                <li class="navbar"><a href="#cast">角色介紹</a></li>
+                <li class="navbar"><a href="#award">獲獎紀錄</a></li>
+                <li class="navbar"><a href="#review">影評</a></li>
+                <li class="navbar"><a href="./購票系統.html">購票連結</a></li>
+                <li class="navbar"><a href="#homepage">回到首頁</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="hamBar">
+                <li class="hambar"><a href="#synopsis">劇情介紹</a></li>
+                <li class="hambar"><a href="#cast">角色介紹</a></li>
+                <li class="hambar"><a href="#award">獲獎紀錄</a></li>
+                <li class="hambar"><a href="#review">影評</a></li>
+                <li class="hambar"><a href="./購票系統.html">購票連結</a></li>
+                <li class="hambar"><a href="#homepage">回到首頁</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 記得把所有class、圖片、路徑改英文，使用底線替代空格 -->
+    <main>
+        <section class="homepage" id="homepage">
+            <div class="movie_title">
+                <h1 class="homepage">INTERSTELLAR</h1>
+            </div>
+            <div class="trailer_container">
+                <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E"><button>觀看精彩預告片</button></a>
+                <div class="media_container">
+                    <div class="media_icon">
+                        <a href="https://x.com/interstellar"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/interstellarmovie/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/InterstellarMovie/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.youtube.com/@InterstellarMovie"><i
+                                class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                    <div class="media_name">
+                        <a href="https://x.com/interstellar">
+                            <p>&nbsp &nbsp X</p>
+                        </a>
+                        <a href="https://www.instagram.com/interstellarmovie/">
+                            <p>&nbsp &nbsp INSTRAGRAM</p>
+                        </a>
+                        <a href="https://www.facebook.com/InterstellarMovie/">
+                            <p>&nbsp &nbsp FACEBOOK</p>
+                        </a>
+                        <a href="https://www.youtube.com/@InterstellarMovie">
+                            <p>&nbsp &nbsp YOUTUBE</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="synopsis" id="synopsis">
+            <h1 class="synopsis">關於電影</h1>
+            <div class="synopsis_1">
+                <div class="image_container">
+                    <div class="image open" id="image1">
+                        <img src="./img/synopsis/house.jpg" alt="">
+                    </div>
+                    <div class="image" id="image2">
+                        <img src="./img/synopsis/spaceship.jpg" alt="">
+                    </div>
+                    <div class="image" id="image3">
+                        <img src="./img/synopsis/space.jpg" alt="">
+                    </div>
+                    <div class="image" id="image4">
+                        <img src="./img/synopsis/future.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 劇情導覽列 -->
+                <div class="synopsis_1_1">
+                    <ul class="nav_1">
+                        <li onclick="changeContent('content1'); changeImage('image1')">
+                            <h3>地球危機</h3>
+                        </li>
+                        <li onclick="changeContent('content2'); changeImage('image2')">
+                            <h3>太空探險</h3>
+                        </li>
+                        <li onclick="changeContent('content3'); changeImage('image3')">
+                            <h3>宇宙奇遇</h3>
+                        </li>
+                        <li onclick="changeContent('content4'); changeImage('image4') ">
+                            <h3>人類未來</h3>
+                        </li>
+                    </ul>
+                    <div class="content active" id="content1">
+                        <p>在不久的未來，地球受到日益嚴重的氣候變化和糧食短缺的困擾，人類文明面臨著前所未有的危機。主角庫柏是一名退役的NASA飛行員，他與他的女兒墨菲之間有著深厚的感情。儘管生活在艱困的環境中，庫柏總是盡力保護和照顧著女兒，他們之間的親情成為了故事的一個重要主題。
+                        </p>
+                    </div>
+                    <div class="content" id="content2">
+                        <p>當庫柏加入NASA的太空探險隊伍，準備啟程尋找新的居住星球時，他和女兒墨菲之間的別離成為了一個動人的插曲。墨菲雖然年幼，卻對父親的離開感到難以接受，但同時也理解父親的使命和責任。他們之間的離別成為了庫柏前進的動力，他決心為了女兒和人類的未來做出犧牲。
+                        </p>
+                    </div>
+                    <div class="content" id="content3">
+                        <p>在太空探險中，庫柏和他的隊伍面臨著各種危險和挑戰，但他心中始終牽掛著墨菲，她是他前進的動力和希望。庫柏在面對未知世界的同時，也不斷思念著自己的女兒，他的愛和掛念成為了他在宇宙中前行的指引。
+                        </p>
+                    </div>
+                    <div class="content" id="content4">
+                        <p>最終，當庫柏進入五度空間，以解決地球危機時，他的心中始終充滿了對女兒的愛和思念。他利用五度空間的力量，傳達了重要的信息給墨菲，幫助她和地球的其他科學家找到了解決危機的方法。庫柏的愛和奉獻最終讓他和女兒團聚，並為人類開啟了一個新的未來。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 劇照輪播圖 -->
+            <div class="slider">
+                <div class="slide_track">
+                    <div class="slide">
+                        <img src="./img/stills/img_1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_8.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_9.jpg" alt="">
+                    </div>
+                    <!--  -->
+                    <div class="slide">
+                        <img src="./img/stills/img_1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_8.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/stills/img_9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cast" id="cast">
+            <h1 class="cast">角色介紹</h1>
+            <!-- <div class="slider_container swiper">
+                <div class="slide_content">
+                    <div class="card_wrapper swiper-wrapper">
+                        <div onclick="changeCast('a1'); changeDescription('desc1')" class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./img/cast/Matthew_McConaughey.jpg" class="card_img">
+                                </div>
+
+                                <div class="card_content">
+                                    <h2 class="name">馬修·麥康納</h2>
+                                    <p class="character">庫柏(Cooper)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="changeCast('cast2'); changeDescription('desc2')" class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./img/cast/Jessica_Chastain.jpg" class="card_img">
+                                </div>
+
+                                <div class="card_content">
+                                    <h2 class="name">潔西卡·雀絲坦</h2>
+                                    <p class="character">墨菲</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="changeCast('cast3'); changeDescription('desc3')" class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./img/cast/Anne_Hathaway.jpg" class="card_img">
+                                </div>
+
+                                <div class="card_content">
+                                    <h2 class="name">安·海瑟薇</h2>
+                                    <p class="character">艾蜜莉亞·布蘭德</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="changeCast('cast4'); changeDescription('desc4')" class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./img/cast/Matt_Damon.jpg" class="card_img">
+                                </div>
+
+                                <div class="card_content">
+                                    <h2 class="name">麥特·戴蒙 </h2>
+                                    <p class="character">曼恩博士</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="changeCast('cast5'); changeDescription('desc5')" class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./img/cast/Sir_Michael_Caine.jpg" class="card_img">
+                                </div>
+
+                                <div class="card_content">
+                                    <h2 class="name">米高·肯恩</h2>
+                                    <p class="character">布蘭德教授</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div> -->
+
+            <div class="wrapper">
+                <div class="cast_container">
+                    <input type="radio" name="slide" id="a1" checked>
+                    <label onclick="changeDescription('description1')" for="a1" class="cast_card">
+                        <div class="row">
+                            <!-- <div class="icon">1</div> -->
+                            <!-- <div class="description"> -->
+                            <!-- <h4>Winter</h4>
+                                <p>Winter has so much to offer -
+                                 creative activities</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="a2">
+                    <label onclick="changeDescription('description2')" for="a2" class="cast_card">
+                        <div class="row">
+                            <!-- <div class="icon">2</div> -->
+                            <!-- <div class="description"> -->
+                            <!-- <h4>Digital Technology</h4>
+                                <p>Gets better every day -
+                                 stay tuned</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="a3">
+                    <label onclick="changeDescription('description3')" for="a3" class="cast_card">
+                        <div class="row">
+                            <!-- <div class="icon">3</div> -->
+                            <!-- <div class="description"> -->
+                            <!-- <h4>Globalization</h4>
+                                <p>Help people all over the world</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="a4">
+                    <label onclick="changeDescription('description4')" for="a4" class="cast_card">
+                        <div class="row">
+                            <!-- <div class="icon">4</div> -->
+                            <!-- <div class="description"> -->
+                            <!-- <h4>New technologies</h4>
+                                <p>Space engineering becomes
+                                 more and more advanced</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="a5">
+                    <label onclick="changeDescription('description5')" for="a5" class="cast_card">
+                        <div class="row">
+                            <!-- <div class="icon">5</div> -->
+                            <!-- <div class="description"> -->
+                            <!-- <h4>New technologies</h4>
+                                <p>Space engineering becomes
+                                 more and more advanced</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </label>
+                </div>
+                <div class="description show" id="description1">
+                    <h2>約瑟夫·庫柏(Joseph Cooper)</h2>
+                    <p>馬修·麥康納(Matthew
+                        McConaughey)飾演，庫柏是一位前太空人和農夫，他被選中參與一項危險的任務，穿越蟲洞尋找新的家園，以拯救人類。庫柏面臨著道德抉擇和與家人的離別，並展現出強大的毅力和智慧。</p>
+                </div>
+                <div class="description" id="description2">
+                    <h2>艾蜜莉亞·布蘭德博士(Dr.Amelia Brand)</h2>
+                    <p>安妮·海瑟薇(Anne Hathaway)飾演，她是NASA的一位天文學家和物理學家，在任務中擔任庫柏的同事和合作者。她致力於解決宇宙中的重力問題，以便人類能夠找到適合居住的新星球。</p>
+                </div>
+                <div class="description" id="description3">
+                    <h2>墨菲·庫柏(Murphy Cooper)</h2>
+                    <p>傑西卡·查斯坦(Jessica Michelle
+                        Chastain)飾演，墨菲是一個聰明而好奇的年輕女孩，對宇宙和科學充滿著熱情。她與父親庫柏之間有著非常親密的關係，當庫柏參與一個秘密的太空任務時，墨菲被迫與父親分離，然而，墨菲並沒有因此而氣餒，她堅信父親會回來，並對解決地球面臨的危機充滿信心。
+                    </p>
+                </div>
+                <div class="description" id="description4">
+                    <h2>曼恩博士(Dr.Mann)</h2>
+                    <p>麥特·戴蒙(Matt Damon)飾演，曼恩博士曾經參與太空探索的任務，他在某個行星上開展了一個重要的探索任務。然而，隨著劇情的發展他的行為和動機逐漸變得不明朗，引發了劇情的轉折。</p>
+                </div>
+                <div class="description" id="description5">
+                    <h2>布蘭德教授(Professor John Brand)</h2>
+                    <p>邁克爾·凱恩(Michael
+                        Caine)飾演，布蘭德教授在電影中扮演著關鍵的角色，他是一個堅定的領導者，主導了一個旨在拯救人類的計劃。在整個部電影中，他的計劃和決策受到了質疑和挑戰。他必須在人類存亡的壓力下作出艱難的抉擇，同時面對自己的道德和倫理困境。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="award" id="award">
+            <h1 class="award">獲獎紀錄</h1>
+            <div class="record">
+                <div class="award1">
+                    <img src="./img/award/oscar_1.png" alt="">
+                    <div class="award_content">
+                        <h2>第87屆奧斯卡金像獎</h2>
+                        <p>最佳視覺效果(獲獎)</p>
+                        <p>最佳藝術指導(提名)</p>
+                        <p>最佳音效剪輯(提名)</p>
+                        <p>最佳音效(提名)</p>
+                        <p>最佳配樂(提名)</p>
+                    </div>
+                </div>
+                <div class="award1">
+                    <img src="./img/award/BAFTA_1.png" alt="">
+                    <div class="award_content">
+                        <h2>第68屆英國電影學院獎</h2>
+                        <p>最佳視覺特效(獲獎)</p>
+                        <p>最佳藝術指導(提名)</p>
+                        <p>最佳原創音樂(提名)</p>
+                        <p>最佳攝影(提名)</p>
+                    </div>
+                </div>
+                <div class="award1">
+                    <img src="./img/award/Saturn_1.png" alt="">
+                    <div class="award_content">
+                        <h2>第41屆土星獎</h2>
+                        <p>最佳科幻電影(獲獎)</p>
+                        <p>最佳藝術指導(獲獎)</p>
+                        <p>最佳視覺特效(獲獎)</p>
+                        <p>最佳配樂(獲獎)</p>
+                        <p>最佳寫作(獲獎)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review" id="review">
+            <h1 class="review">影評</h1>
+            <div class="slider_container swiper">
+                <div class="slide_content">
+                    <div class="card_wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card_image">
+                                    <img src="./img/cast/Matthew_McConaughey.jpg" class="card_img">
+                                </div> -->
+
+                                <div class="card_content">
+                                    <h2 class="name">爛番茄網站</h2>
+                                    <p class="character">
+                                        《星際效應》驚心動魄、令人深思，且在觀影視覺上是部絢爛的電影，這都是來自於導演克里斯多福·諾蘭的期望，即使電影涵蓋知識的範圍在某種程度上超出了他的掌握。</p>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card_image">
+                                    <img src="./img/cast/Jessica_Chastain.jpg" class="card_img">
+                                </div> -->
+
+                                <div class="card_content">
+                                    <h2 class="name">《洛杉磯時報》</h2>
+                                    <p class="character">電影評論家大多認為《星際效應》是一個有娛樂性、情感豐富和發人深省的科幻傳奇故事，縱使它有時會有些沉悶和感傷。</p>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card_image">
+                                    <img src="./img/cast/Anne_Hathaway.jpg" class="card_img">
+                                </div> -->
+
+                                <div class="card_content">
+                                    <h2 class="name">《好萊塢報導》</h2>
+                                    <p class="character">這部構思和實現宏偉的史詩作品試圖同等重視人類的情感和對宇宙的猜測，結果喜憂參半，但從不亞於引人入勝，有時甚至不止於此。</p>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card_image">
+                                    <img src="./img/cast/Matt_Damon.jpg" class="card_img">
+                                </div> -->
+
+                                <div class="card_content">
+                                    <h2 class="name">《紐約時報》</h2>
+                                    <p class="character">《星際效應》探討了科學與信仰、人文之間的關係，並說明了這些領域之間真正的共生關係。</p>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card_image">
+                                    <img src="./img/cast/Sir_Michael_Caine.jpg" class="card_img">
+                                </div> -->
+
+                                <div class="card_content">
+                                    <h2 class="name">《芝加哥太陽報》</h2>
+                                    <p class="character">這是我看過的最美麗的電影之一。就它的視覺效果而言，以及它關於我們都知道但無法用科學術語衡量的一件事——愛</p>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star checked1 star"></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="movie_name">
+            <h1>INTERSTELLAR</h1>
+        </div>
+        <div class="movie_info">
+            <h3>追蹤我們以獲得更多資訊</h3>
+        </div>
+        <div class="media_container2">
+            <div class="media">
+                <a href="https://x.com/interstellar"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/interstellarmovie/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/InterstellarMovie/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.youtube.com/@InterstellarMovie"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+        </div>
+
+
+        <div>
+
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
